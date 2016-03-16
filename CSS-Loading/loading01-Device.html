@@ -7,16 +7,15 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Steper Kuo">
-	<title>Loading</title>
+	<title>Pre-Loader Effect</title>
 
 	<!-- Link *** CSS  -->
 	<link rel="stylesheet" href="https://cdn.bootcss.com/foundation/6.2.0/foundation.min.css">
 	<link rel="stylesheet" href="//demo.lanrenzhijia.com/2014/owl0509/assets/js/highlight/styles/monokai_sublime.css">
 	<link rel="stylesheet" href="//demo.lanrenzhijia.com/2014/owl0509/assets/css/demo.css">
 	<link rel="stylesheet" href="//demo.lanrenzhijia.com/2014/owl0509/assets/css/devices.css">
+	<link rel="stylesheet" href="preLoader.css">
 
-	<!-- Script *** JS -->
-	<script src=""></script>
 </head>
 <body>
 <div id="devices-container">
@@ -38,12 +37,20 @@
 		<div class="frame-outer">
 			<div class="camera"></div>
 			<div class="mic"></div>
-			<div class="screen">
-				
+			<div class="screen" style="">
+				<!-- 载入界面动画 -->
+				<div id="preloader">
+					<div class="loader">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="screen-bottom">
-			<div class="owl-desktop-logo">Loading</div>
+			<div class="owl-desktop-logo">Loading Effect</div>
 			<div class="push">
 				<div class="square"></div>
 			</div>
@@ -56,10 +63,20 @@
 	</div>
 </div>
 
+<!-- Script *** JS -->
 <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
 <script src="//demo.lanrenzhijia.com/2014/owl0509/assets/js/highlight/highlight.pack.js"></script>
 <script src="//demo.lanrenzhijia.com/2014/owl0509/assets/js/app.js"></script>
 <script src="//demo.lanrenzhijia.com/2014/owl0509/assets/js/devices.demo.js"></script>
-
+<script src=""></script>
+<script>
+	$(document).ready(function ()
+	{
+		$('#preloader').fadeOut('fast', function ()
+			{
+				$(this).remove();
+			});
+	})
+</script>
 </body>
 </html>

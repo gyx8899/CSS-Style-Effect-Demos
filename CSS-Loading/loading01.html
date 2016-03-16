@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link type="text/css" href="preLoader.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- 载入界面动画 -->
+<div id="preloader">
+	<div class="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+<script>
+	jQuery(document).ready(function ($)
+	{
+		"use strict";
+		$(window).load(function ()
+		{
+			$('#preloader').fadeOut('fast', function ()
+			{
+				$(this).remove();
+			});
+		});
+
+	});
+</script>
+</body>
+</html>

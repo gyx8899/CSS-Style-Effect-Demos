@@ -1,7 +1,6 @@
-.row
+.demo-content
 {
-	/*margin-left: -15px;*/
-	/*margin-right: -15px;*/
+	padding: 15px 0;
 	background-color: #000;
 }
 h2.title
@@ -10,11 +9,12 @@ h2.title
 	line-height: 22px;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0 10px;
 	font-weight: 800;
 	text-transform: uppercase;
 	display: block;
 	color: #FFF;
+	background-color: transparent;
 	letter-spacing: -1px;
 }
 h2.title a
