@@ -1,0 +1,137 @@
+/*Grid hover css*/
+.folder
+{
+	width: 100%;
+}
+.folder *, .folder *:before, .folder *:after
+{
+	-webkit-box-sizing: initial;
+	-moz-box-sizing: initial;
+	box-sizing: initial;
+}
+.first, .second
+{
+	width: 50%;
+	float: left;
+}
+.grid-border
+{
+	width: 310px;
+	height: 310px;
+	margin-left: 30px;
+	position: relative;
+	background-color: lightgray;
+	border: 1px solid gray;
+}
+.grid-border .grid-row
+{
+	height: 70px;
+}
+.grid-border .grid-row .grid-column
+{
+	width: 70px;
+	height: 70px;
+	float: left;
+	text-align: center;
+	border: 6px solid transparent;
+	margin-top: -6px;
+	margin-left: -6px;
+	cursor: pointer;
+}
+.grid-border .grid-row .grid-column:hover
+{
+	border-color: blueviolet;
+}
+.grid-border .grid-row .grid-column span
+{
+	display: block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	background-color: darkkhaki;
+}
+.grid-border .grid-row:first-child .grid-column
+{
+	margin-top: 0;
+}
+.grid-border .grid-column:first-child
+{
+	margin-left: 0;
+}
+.grid-border .grid-row:first-child .grid-column:first-child
+{
+	margin-left: 0;
+	margin-top: 0;
+}
+.grid-padding
+{
+	width: 310px;
+	height: 310px;
+	margin-left: 30px;
+	position: relative;
+	background-color: lightgray;
+	border: 1px solid gray;
+}
+.grid-padding .grid-row
+{
+	height: 70px;
+}
+.grid-padding .grid-row .grid-column
+{
+	width: 70px;
+	height: 70px;
+	float: left;
+	text-align: center;
+	background-color: transparent;
+	padding: 6px;
+	cursor: pointer;
+}
+.grid-padding .grid-row .grid-column:hover
+{
+	background-color: blueviolet;
+}
+.grid-padding .grid-row .grid-column span
+{
+	display: block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	background-color: darkkhaki;
+}
+.grid-padding .grid-row:not(:first-child) .grid-column
+{
+	margin-top: -6px;
+}
+.grid-padding .grid-column:not(:first-child)
+{
+	margin-left: -6px;
+}
+.grid-padding .grid-row:not(:first-child) .grid-column:not(:first-child)
+{
+	margin-top: -6px;
+	margin-left: -6px;
+}
+/*CSS源代码*/
+.wrap
+{
+	padding: 10px 0 0 40px;
+	width: 300px;
+	overflow: hidden;
+}
+.wrap .item
+{
+	position: relative;
+	float: left;
+	margin-left: -10px;
+	margin-top: -10px;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border: 10px solid #ccc;
+}
+.wrap .item:hover
+{
+	z-index: 2;
+	border-color: #f00;
+}
