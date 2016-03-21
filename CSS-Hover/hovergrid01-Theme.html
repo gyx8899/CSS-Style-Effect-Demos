@@ -123,10 +123,23 @@
 						</div>
 					</div>
 				</div>
+				<br>
 				<div class="folder">
-					<p>Others method</p>
-
+					<p>Others method: <b>non box-sizing</b></p>
 					<div class="wrap">
+						<div class="item">1</div>
+						<div class="item">2</div>
+						<div class="item">3</div>
+						<div class="item">4</div>
+						<div class="item">5</div>
+						<div class="item">6</div>
+						<div class="item">7</div>
+						<div class="item">8</div>
+						<div class="item">9</div>
+					</div>
+					<br>
+					<p>Others method: <b>box-sizing</b></p>
+					<div class="wrap box">
 						<div class="item">1</div>
 						<div class="item">2</div>
 						<div class="item">3</div>
@@ -142,7 +155,30 @@
 			<h3 id="overview">Overview</h3>
 			<!--Introduction here-->
 			<p>
-				Hover in grid, set border colorful.
+				Hover in grid, set border colorful.<br>
+				Recommend:<br>
+				<code>.wrap .item
+					{
+					position: relative;
+					float: left;
+					margin-left: -10px;
+					margin-top: -10px;
+					width: 80px;
+					height: 80px;
+					line-height: 80px;
+					text-align: center;
+					border: 10px solid #ccc;
+					}
+					.wrap.box .item
+					{
+					line-height: 60px;
+					}
+					.wrap .item:hover
+					{
+					z-index: 2;
+					border-color: #f00;
+					}
+				</code>
 			</p>
 			<h3 id="setup">Setup</h3>
 			<pre><code id="setupCode"></code></pre>

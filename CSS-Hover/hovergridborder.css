@@ -9,6 +9,13 @@
 	-moz-box-sizing: initial;
 	box-sizing: initial;
 }
+.folder .box, .folder .box:before, .folder .box:after,
+.folder .box *, .folder .box *:before, .folder .box *:after
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 .first, .second
 {
 	width: 50%;
@@ -129,6 +136,10 @@
 	line-height: 80px;
 	text-align: center;
 	border: 10px solid #ccc;
+}
+.wrap.box .item
+{
+	line-height: 60px;
 }
 .wrap .item:hover
 {
