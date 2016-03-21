@@ -1,0 +1,157 @@
+.icon
+{
+	width: 38px;
+	background-color: #2d76b9;
+}
+li
+{
+	list-style-type: none;
+}
+li:hover .icon
+{
+	width: 208px;
+	background-color: #1d1fc4;
+}
+li .icon
+{
+	background: #d91e76 url('http://modernizr.com/i/img/icons.png') 3px 0 no-repeat;
+	border-radius: 19px;
+	display: block;
+	color: #141414;
+	height: 38px;
+	line-height: 38px;
+	margin: 10px 0 0;
+	text-indent: 50px;
+	white-space: nowrap;
+	text-decoration: none;
+	z-index: 5;
+	-webkit-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-moz-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-o-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-webkit-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	-o-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+}
+/* Places */
+#places
+{
+	height: 190px;
+	width: 230px;
+}
+#places li
+{
+	cursor: pointer;
+	height: 38px;
+	position: relative;
+	list-style-type: none;
+}
+#places .icon
+{
+	background: #d91e76 url('http://modernizr.com/i/img/icons.png') 3px 0 no-repeat;
+	background-color: rgba(217, 30, 118, .42);
+	border-radius: 19px;
+	display: block;
+	color: #141414;
+	float: none;
+	height: 38px;
+	line-height: 38px;
+	margin: 10px 0 0;
+	position: relative;
+	text-align: left;
+	text-indent: 50px;
+	/*text-shadow: #333 0 1px 0;*/
+	white-space: nowrap;
+	/*width: 208px;*/
+	z-index: 5;
+	/* If you're poking around here, you're probably wondering how the heck I made those social link hovers, right? Well, look further down! */
+	-webkit-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-moz-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-o-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	transition: width .25s ease-in-out, background-color .25s ease-in-out;
+	-webkit-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	-o-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+	box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+}
+.js #places .icon
+{
+	width: 38px;
+}
+#places .icon
+{
+	/*color: #fafafa;*/
+	/*overflow: hidden;*/
+}
+#places .donate
+{
+	position: relative;
+}
+#places .twitter
+{
+	background-color: rgba(45, 118, 185, .42);
+	background-position: 3px -50px;
+}
+#places .github
+{
+	background-color: rgba(80, 108, 123, .42);
+	background-position: 3px -100px;
+}
+#places .github
+{
+	background-color: rgba(65, 131, 196, .42);
+	background-position: 3px -100px;
+}
+#places .rss
+{
+	background-color: rgba(255, 109, 0, .42);
+	background-position: 3px -150px;
+}
+#places li:hover .icon,
+.touch #places li .icon
+{
+	width: 218px;
+}
+.touch #places li .icon, #places li:hover .icon
+{
+	background-color: #d91e76;
+}
+.touch #places li .twitter, #places li:hover .twitter
+{
+	background-color: #2d76b9;
+}
+.touch #places li .github, #places li:hover .github
+{
+	background-color: #506c7b;
+}
+.touch #places li .github, #places li:hover .github
+{
+	background-color: #4183c4;
+}
+.touch #places li .rss, #places li:hover .rss
+{
+	background-color: #ff6d00;
+}
+/* This is the sexiness behind the hovers: */
+.wf-active #places li:after,
+.tk-loaded #places li:after
+{
+	color: #141414;
+	content: attr(data-alt);
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	position: absolute;
+	left: 50px;
+	top: 0;
+	z-index: 2;
+}
+/* Donate button */
+#places form
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
