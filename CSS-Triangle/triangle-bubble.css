@@ -1,0 +1,55 @@
+.event
+{
+	z-index: 1070;
+	display: inline-block;
+	font-family: "klavika Regular", serif;
+	font-size: 16px;
+}
+.event .event-inner
+{
+	padding: 15px 18px 10px;
+	color: #fff;
+	text-align: left;
+	background-color: #333333;
+	border-radius: 1px;
+	white-space: normal;
+	width: 130px;
+}
+.event .event-arrow
+{
+	border-color: #333333 transparent transparent;
+	border-style: solid;
+	border-width: 10px 5px 0;
+	height: 0;
+	width: 0;
+}
+.event .event-point
+{
+	color: #d20a0a;
+	width: 4px;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	-o-transform: scale(0.6);
+	transform: scale(0.6);
+}
+.event .event-arrow,
+.event .event-point
+{
+	margin-left: 15px;
+}
+.event .event-time
+{
+	font-family: "Klavika Bold", Arial, serif;
+	margin-left: 7px;
+}
+.event .event-inner .event-by
+{
+	color: #909191;
+	font-size: 12px;
+}
+.event .event-content
+{
+	line-height: 17px;
+	font-family: "Klavika Bold", Arial, serif;
+}
