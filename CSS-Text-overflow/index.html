@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Steper Kuo">
+	<title>CSS - Text overflow</title>
+
+	<!-- Link *** CSS  -->
+	<link href="" rel="stylesheet">
+
+	<style type="text/css">
+		.clearfix
+		{
+			clear: both;
+			overflow: auto;
+			zoom: 1;
+		}
+		.overflow-demo
+		{
+			margin: 10px;
+		}
+		.demo-title
+		{
+			font-size: 24px;
+			font-weight: bold;
+			margin: 0 10px;
+		}
+		.demo-text
+		{
+			width: 300px;
+			color: #000;
+			background-color: lightgray;
+			margin: 10px 0;
+			padding: 10px;
+			border: 1px solid red;
+		}
+		.text-overflow-ellipsis
+		{
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.demo-section
+		{
+			display: inline-block;
+			float: left;
+			margin: 0 10px;
+		}
+		.line
+		{
+			padding-top: 0;
+			padding-bottom: 0;
+			line-height: normal;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+		}
+		.line1
+		{
+			-webkit-line-clamp: 1;
+		}
+		.line1-height
+		{
+			height: 20px;
+		}
+		.line2
+		{
+			-webkit-line-clamp: 2;
+		}
+		.line2-height
+		{
+			height: 36px;
+		}
+		.line3
+		{
+			-webkit-line-clamp: 3;
+		}
+		.line3-height
+		{
+			height: 54px;
+		}
+	</style>
+</head>
+<body>
+<section class="overflow-demo">
+	<div class="demo-title">Normal</div>
+	<div class="demo-section">
+		<div class="demo-text">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<section class="overflow-demo">
+	<div class="demo-title">overflow: hidden; text-overflow: ellipsis;</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<section class="overflow-demo">
+	<div class="demo-title">overflow: hidden; text-overflow: ellipsis; Max-line 1</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line1">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line1">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line1 line1-height">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line1 line1-height">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<section class="overflow-demo">
+	<div class="demo-title">overflow: hidden; text-overflow: ellipsis; Max-line 2</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line2">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line2">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line2 line2-height">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line2 line2-height">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<section class="overflow-demo">
+	<div class="demo-title">overflow: hidden; text-overflow: ellipsis; Max-line 3</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line3">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line3">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="demo-section">
+		<div class="demo-text text-overflow-ellipsis line line3 line3-height">
+			INsight is all about INspirational people with INcredible stories to tell. INsight is committed to pushing the
+			boundaries of linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+		<div class="demo-text text-overflow-ellipsis line line3 line3-height">
+			INsightisallaboutINspirationalpeoplewithINcrediblestoriestotell. INsight is committed to pushing the boundaries of
+			linear. We're all about INspirational people with INcredible stories to tell
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+</body>
+</html>

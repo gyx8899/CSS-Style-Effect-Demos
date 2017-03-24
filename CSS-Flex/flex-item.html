@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Steper Kuo">
+	<title>Flex Item Style List:</title>
+
+	<!-- Link *** CSS  -->
+	<link href="index.css" rel="stylesheet">
+
+</head>
+<body>
+<h2>Flex Item Style List:</h2>
+<h3>order: 定义项目在容器中的排列顺序，数值越小，排列越靠前，默认值为 0</h3>
+<div class="container container-order">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+</div>
+<h3>flex-basis: 定义了在分配多余空间之前，项目占据的主轴空间，浏览器根据这个属性，计算主轴是否有多余空间</h3>
+<h4>默认值：auto，即项目本来的大小, 这时候 item 的宽高取决于 width 或 height 的值。</h4>
+<h4>当主轴为水平方向的时候，当设置了 flex-basis，项目的宽度设置值会失效，flex-basis 需要跟 flex-grow 和 flex-shrink 配合使用才能发挥效果。</h4>
+<h4>flex: 0 1 auto;</h4>
+<div class="container container-basis-0">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+</div>
+<h4>flex: 0 1 200px;</h4>
+<div class="container container-basis-1">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+</div>
+<h4>item2/item4 = flex: 0 1 300px;</h4>
+<div class="container container-basis-2">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+</div>
+<h3>flex-grow: 定义项目的放大比例</h3>
+<h4>item2 = flex: 2 0 100px;</h4>
+<div class="container container-grow">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+	<div class="item item6">6</div>
+</div>
+<h3>flex-shrink: 定义了项目的缩小比例</h3>
+<div class="container container-shrink">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+	<div class="item item6">6</div>
+</div>
+
+<h3>align-self: 允许单个项目有与其他项目不一样的对齐方式</h3>
+<h4>item2 = align-self: flex-end</h4>
+<div class="container container-align align-flex-start container-align-self">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+
+</body>
+</html>

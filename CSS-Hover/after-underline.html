@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Steper Kuo">
+	<title>Underline</title>
+
+	<!-- Link *** CSS  -->
+	<link href="" rel="stylesheet">
+
+	<style>
+		.list
+		{
+		}
+		.list-item
+		{
+			cursor: pointer;
+			list-style: none;
+			display: inline-block;
+			padding: 10px 0;
+			text-align: center;
+			position: relative;
+		}
+		.list-item:after
+		{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			content: "";
+			z-index: 3;
+			margin: 0 auto;
+			transform: scale(0, 1);
+			-moz-transform: scale(0, 1);
+			-webkit-transform: scale(0, 1);
+			-o-transform: scale(0, 1);
+			-webkit-transition: transform 0.35s ease;
+			-moz-transition: transform 0.35s ease;
+			-o-transition: transform 0.35s ease;
+			-ms-transition: transform 0.35s ease;
+			transition: transform 0.35s ease;
+		}
+		.list-item:hover:after
+		{
+			transform: scale(1);
+			border-bottom: 10px solid #d20b0b;
+		}
+	</style>
+</head>
+<body>
+<ul class="list">
+	<li class="list-item selected">item1</li>
+	<li class="list-item">item---2</li>
+	<li class="list-item">item-----3</li>
+	<li class="list-item">item--------4</li>
+	<li class="list-item">item-----------5</li>
+</ul>
+
+
+<!-- Script *** JS -->
+<script src="../assets/js/jquery-1.10.2.min.js"></script>
+<script>
+	$(document).ready(function ()
+	{
+
+	})
+</script>
+</body>
+</html>

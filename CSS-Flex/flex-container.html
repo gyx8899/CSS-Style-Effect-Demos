@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Steper Kuo">
+	<title>Flex Container Style List:</title>
+
+	<!-- Link *** CSS  -->
+	<link href="index.css" rel="stylesheet">
+
+</head>
+<body>
+<h2>Flex Container Style List:</h2>
+<h3>flex-direction: 决定主轴的方向(即项目的排列方向)</h3>
+<h4 class="title">*flex-direction: row</h4>
+<div class="container direction-row">
+	<div class="item item-direction item1">1</div>
+	<div class="item item-direction item2">2</div>
+	<div class="item item-direction item3">3</div>
+</div>
+<h4 class="title">*flex-direction: row-reverse</h4>
+<div class="container direction-row-reverse">
+	<div class="item item-direction item1">1</div>
+	<div class="item item-direction item2">2</div>
+	<div class="item item-direction item3">3</div>
+</div>
+<h4 class="title">*flex-direction: column</h4>
+<div class="container direction-column">
+	<div class="item item-direction item1">1</div>
+	<div class="item item-direction item2">2</div>
+	<div class="item item-direction item3">3</div>
+</div>
+<h4 class="title">*flex-direction: column-reverse</h4>
+<div class="container direction-column-reverse">
+	<div class="item item-direction item1">1</div>
+	<div class="item item-direction item2">2</div>
+	<div class="item item-direction item3">3</div>
+</div>
+<h3>flex-wrap: 决定容器内项目是否可换行</h3>
+<h4>flex-wrap: nowrap</h4>
+<div class="container wrap-nowrap">
+	<div class="item item-wrap item1">1</div>
+	<div class="item item-wrap item2">2</div>
+	<div class="item item-wrap item3">3</div>
+	<div class="item item-wrap item4">4</div>
+	<div class="item item-wrap item5">5</div>
+	<div class="item item-wrap item6">6</div>
+</div>
+<h4>flex-wrap: wrap</h4>
+<div class="container wrap-wrap">
+	<div class="item item-wrap item1">1</div>
+	<div class="item item-wrap item2">2</div>
+	<div class="item item-wrap item3">3</div>
+	<div class="item item-wrap item4">4</div>
+	<div class="item item-wrap item5">5</div>
+	<div class="item item-wrap item6">6</div>
+</div>
+<h4>flex-wrap: wrap-reverse</h4>
+<div class="container wrap-wrap-reverse">
+	<div class="item item-wrap item1">1</div>
+	<div class="item item-wrap item2">2</div>
+	<div class="item item-wrap item3">3</div>
+	<div class="item item-wrap item4">4</div>
+	<div class="item item-wrap item5">5</div>
+	<div class="item item-wrap item6">6</div>
+</div>
+<h3>justify-content：定义了项目在主轴的对齐方式。</h3>
+<h4>justify-content: flex-start</h4>
+<div class="container justify-flex-start">
+	<div class="item item-justify item1">1</div>
+	<div class="item item-justify item2">2</div>
+	<div class="item item-justify item3">3</div>
+	<div class="item item-justify item4">4</div>
+	<div class="item item-justify item5">5</div>
+</div>
+<h4>justify-content: flex-end</h4>
+<div class="container justify-flex-end">
+	<div class="item item-justify item1">1</div>
+	<div class="item item-justify item2">2</div>
+	<div class="item item-justify item3">3</div>
+	<div class="item item-justify item4">4</div>
+	<div class="item item-justify item5">5</div>
+</div>
+<h4>justify-content: center</h4>
+<div class="container justify-center">
+	<div class="item item-justify item1">1</div>
+	<div class="item item-justify item2">2</div>
+	<div class="item item-justify item3">3</div>
+	<div class="item item-justify item4">4</div>
+	<div class="item item-justify item5">5</div>
+</div>
+<h4>justify-content: space-between</h4>
+<div class="container justify-space-between">
+	<div class="item item-justify item1">1</div>
+	<div class="item item-justify item2">2</div>
+	<div class="item item-justify item3">3</div>
+	<div class="item item-justify item4">4</div>
+	<div class="item item-justify item5">5</div>
+</div>
+<h4>justify-content: space-around</h4>
+<div class="container justify-space-around">
+	<div class="item item-justify item1">1</div>
+	<div class="item item-justify item2">2</div>
+	<div class="item item-justify item3">3</div>
+	<div class="item item-justify item4">4</div>
+	<div class="item item-justify item5">5</div>
+</div>
+<h3>align-items: 定义了项目在交叉轴上的对齐方式</h3>
+<h4>align-items: flex-start</h4>
+<div class="container container-align align-flex-start">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+<h4>align-items: flex-end</h4>
+<div class="container container-align align-flex-end">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+<h4>align-items: center</h4>
+<div class="container container-align align-center">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+<h4>align-items: baseline</h4>
+<div class="container container-align align-baseline">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+<h4>align-items: stretch</h4>
+<div class="container container-align align-stretch">
+	<div class="item item-align item1">1</div>
+	<div class="item item-align item2">2</div>
+	<div class="item item-align item3">3</div>
+	<div class="item item-align item4">4</div>
+	<div class="item item-align item5">5</div>
+</div>
+<h3>align-content: 定义了多根轴线的对齐方式，如果项目只有一根轴线，那么该属性将不起作用</h3>
+<div>当你 flex-wrap 设置为 nowrap 的时候，容器仅存在一根轴线，因为项目不会换行，就不会产生多条轴线。</div>
+<div>当你 flex-wrap 设置为 wrap 的时候，容器可能会出现多条轴线，这时候你就需要去设置多条轴线之间的对齐方式了。</div>
+<div>建立在主轴为水平方向时测试，即 flex-direction: row, flex-wrap: wrap</div>
+<h4>align-content: flex-start</h4>
+<div class="container container-align-content align-content-flex-start">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+<h4>align-content: flex-end</h4>
+<div class="container container-align-content align-content-flex-end">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+<h4>align-content: center</h4>
+<div class="container container-align-content align-content-center">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+<h4>align-content: space-between</h4>
+<div class="container container-align-content align-content-space-between">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+<h4>align-content: space-around</h4>
+<div class="container container-align-content align-content-space-around">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+<h4>align-content: stretch (Default)</h4>
+<div class="container container-align-content align-content-stretch">
+	<div class="item item-align-content">1</div>
+	<div class="item item-align-content">2</div>
+	<div class="item item-align-content">3</div>
+	<div class="item item-align-content">4</div>
+	<div class="item item-align-content">5</div>
+	<div class="item item-align-content">6</div>
+	<div class="item item-align-content">7</div>
+	<div class="item item-align-content">8</div>
+	<div class="item item-align-content">9</div>
+	<div class="item item-align-content">10</div>
+	<div class="item item-align-content">11</div>
+	<div class="item item-align-content">12</div>
+</div>
+</body>
+</html>
