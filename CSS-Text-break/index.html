@@ -12,24 +12,50 @@
 	<!-- Link *** CSS  -->
 	<link href="" rel="stylesheet">
 	<style type="text/css">
+		.clearfix
+		{
+			clear: both;
+			overflow: auto;
+			zoom: 1;
+		}
+		.introduce,
 		.text-demo
 		{
 			margin: 10px;
 		}
-		.demo-title
+		.introduce-title,
+		.demo-title,
+		.summary-title
 		{
 			font-size: 24px;
 			font-weight: bold;
 			margin: 20px 0;
 		}
+		.introduce-desc
+		{
+			margin: 10px;
+		}
+		.demo-title,
 		.demo-text
 		{
-			width: 300px;
+			float: left;
+		}
+		.demo-title
+		{
+			font-size: 18px;
+			width: 230px;
+		}
+		.demo-text
+		{
+			width: 134px;
 			background: lightgray;
 			color: #000;
-			height: 100px;
 			border: 1px solid red;
 			margin: 10px 0;
+		}
+		.word-break-keep-all
+		{
+			word-break: keep-all;
 		}
 		.word-break-break-all
 		{
@@ -39,43 +65,107 @@
 		{
 			word-wrap: break-word;
 		}
-	</style>
+		.summary
+		{
 
+		}
+		.summary-head
+		{
+			text-align: center;
+			font-weight: bold;
+		}
+		.summary-type
+		{
+			height: 150px;
+			font-weight: bold;
+		}
+		.summary-image
+		{
+			vertical-align: top;
+		}
+	</style>
 </head>
 <body>
+<section class="introduce">
+	<div class="introduce-title">浏览器自带的自动换行</div>
+	<ul class="introduce-desc">
+		<li>non-CJK：会在半角空格或者连字符(-)位置自动换行，不会在长单词的中间换行</li>
+		<li>CJK(中日韩)：可以在任何一个CJK字体后换行</li>
+		<li>CJK中包含non-CJK:non-CJK部分按 non-CJK情况处理进行换行处理</li>
+		<li>CJK中含有标点符号时，浏览器不会让标点符号位于一个行的行首，会使标点符号和前一个字符组成一个整体进行换行。</li>
+	</ul>
+</section>
+<section class="introduce">
+	<div class="introduce-title"></div>
+	<div class="introduce-desc"></div>
+</section>
+<section class="introduce">
+	<div class="introduce-title"></div>
+	<div class="introduce-desc"></div>
+</section>
 <section class="text-demo">
 	<div class="demo-title">Normal</div>
 	<div class="demo-text">
-		congratulation congratulation congratulation congratulation congratulation congratulation
+		自身都带有自动换行功能啊，
+		AAAAAA
+		BBBBBBBBBBBBB,CCCCCCCCC，
+		的右端自动换行。
 	</div>
-	<div class="demo-text">
-		congratulation1324143congratulation53654365fewqfewafewagq4323254325432545543254354 congratulation3143214
-		congratulation congratulation congratulation
+	<div class="clearfix"></div>
+</section>
+<section class="text-demo">
+	<div class="demo-title">word-break: keep-all;</div>
+	<div class="demo-text word-break-keep-all">
+		自身都带有自动换行功能啊，
+		AAAAAA
+		BBBBBBBBBBBBB,CCCCCCCCC，
+		的右端自动换行。
 	</div>
+	<div class="clearfix"></div>
 </section>
 <section class="text-demo">
 	<div class="demo-title">word-break: break-all;</div>
 	<div class="demo-text word-break-break-all">
-		congratulation congratulation congratulation congratulation congratulation congratulation
+		自身都带有自动换行功能啊，
+		AAAAAA
+		BBBBBBBBBBBBB,CCCCCCCCC，
+		的右端自动换行。
 	</div>
-	<div class="demo-text word-break-break-all">
-		congratulation1324143congratulation53654365fewqfewafewagq4323254325432545543254354 congratulation3143214
-		congratulation congratulation congratulation
-	</div>
+	<div class="clearfix"></div>
 </section>
 <section class="text-demo">
 	<div class="demo-title">word-wrap: break-word;</div>
 	<div class="demo-text word-wrap-break-word">
-		congratulation congratulation congratulation congratulation congratulation congratulation
+		自身都带有自动换行功能啊，
+		AAAAAA
+		BBBBBBBBBBBBB,CCCCCCCCC，
+		的右端自动换行。
 	</div>
-	<div class="demo-text word-wrap-break-word">
-		congratulation1324143congratulation53654365fewqfewafewagq4323254325432545543254354 congratulation3143214
-		congratulation congratulation congratulation
-	</div>
+	<div class="clearfix"></div>
 </section>
-<section>
-	<div class="demo-title">Compare: IE VS FF VS Chrome&Safari</div>
-	<img src="word-break.gif">
+<section class="summary">
+	<div class="summary-title">Compare: IE VS FF VS Chrome&Safari</div>
+	<table class="summary-table">
+		<tr>
+			<th class="summary-head">Type</th>
+			<th class="summary-head">IE</th>
+			<th class="summary-head">FireFox</th>
+			<th class="summary-head">Chrome</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="summary-type">Not Set</div>
+				<div class="summary-type">word-break: keep-all</div>
+				<div class="summary-type">word-break: break-all</div>
+				<div class="summary-type">word-wrap : break-word</div>
+			</td>
+			<td colspan="3">
+				<img src="ie.jpg" alt="" class="summary-image">
+				<img src="firefox.jpg" alt="" class="summary-image">
+				<img src="chrome.jpg" alt="" class="summary-image">
+			</td>
+		</tr>
+	</table>
 </section>
 </body>
 </html>
